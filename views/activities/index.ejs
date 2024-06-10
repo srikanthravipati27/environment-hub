@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activities</title>
+    <link rel="stylesheet" href="/css/fo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Activities</h1>
+        <ul>
+            <% activities.forEach(activity => { %>
+                <li><a href="/activities/<%= activity.id %>"><%= activity.name %></a></li>
+            <% }) %>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Environmental Education Hub. All rights reserved.</p>
+    </div>
+</body>
+</html>
